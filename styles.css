@@ -1,0 +1,112 @@
+/* Google Fonts - Press Start 2P (pixel font) */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* --- Variables CSS --- */
+:root {
+  --color-fons-pokemon: #f5e6d0;
+  --color-text: #1a1a1a;
+  --color-badge-foc: #f5a623;
+  --color-badge-fantasma: #9b59b6;
+  --color-badge-psiquic: #e91e8c;
+  --color-badge-drac: #3498db;
+  --color-boto-tornar: #e74c3c;
+  --color-boto-tornar-hover: #c0392b;
+  --font-pixel: 'Press Start 2P', monospace;
+}
+
+ .index-titol {
+    font-size: 1.1rem;
+  }
+
+
+/* --- Reset bàsic --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-pixel);
+  color: var(--color-text);
+}
+
+
+
+body.index {
+    background-image: url(Imagenes/kanto-map.jpeg); width: 80%;
+}
+h1 {
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+
+
+.tipo {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+
+.tag {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;  
+    display: inline-block;   
+    text-decoration: none;   
+}
+
+
+.planta { background: green; }
+.agua   { background: blue; }
+.fuego  { background: orange; }
+.veneno { background: purple; }
+.volador {
+  background: linear-gradient(to bottom, #3498db 50%, #bdc3c7 50%);
+}
+
+.evo-botones {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.evo-botones img {
+    width: 150px;   /* puedes ajustarlo */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.evo-botones img:hover {
+    transform: scale(1.1);
+}
+
+.flecha {
+    width: 60px;
+    pointer-events: none; 
+}
+
+
+.btn-index {
+    position: fixed;       
+    top: 20px;             
+    right: 20px;         
+    padding: 10px 20px;    
+    background-color: #3498db;
+    color: white;          
+    text-decoration: none;  
+    border-radius: 8px;    
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: 0.2s;
+}
+
+/* Efecto al pasar el mouse */
+.btn-index:hover {
+    background-color: #2980b9;
+}
